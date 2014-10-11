@@ -146,7 +146,7 @@ static unsigned FireWeapon_jmp = 0x0071F05F;
 static unsigned FireWeapon_dest = (unsigned)& FireWeapon;
 static unsigned FireWeapon_call = 0x004BE1A0;
 static unsigned FireWeapon_ret = FireWeapon_jmp + 5;
-static unsigned DamageEffect_jmp = 0x0071C97A;
+static unsigned DamageEffect_jmp = 0x0078C0FA;
 // Those snippets / functions are from FOSE / NVSE, thanks
 
 void SafeWrite8(unsigned int addr, unsigned int data)
@@ -1275,7 +1275,7 @@ void PatchGame(HINSTANCE& silverlock)
 	SafeWriteBuf(FireFix_jmp, jmp, sizeof(jmp));
 	SafeWriteBuf(FireFix_patch, patch, sizeof(patch));
 
-	unsigned char dmg_patch[] = {0xE9, 0x1D,0x15,0x00,0x00,0x90};
+	unsigned char dmg_patch[] = {0xEB, 0x66};
 	SafeWriteBuf(DamageEffect_jmp, dmg_patch, sizeof(dmg_patch));
 
 	WriteRelCall(delegatorCall_src, delegatorCall_dest);
