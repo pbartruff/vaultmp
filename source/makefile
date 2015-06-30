@@ -126,6 +126,7 @@ clean: clean_debug clean_release
 before_debug:
 	cmd /c if not exist $(OBJDIR_DEBUG) md $(OBJDIR_DEBUG)
 	cmd /c if not exist $(OBJDIR_DEBUG)\\lib\\stack_trace\\src md $(OBJDIR_DEBUG)\\lib\\stack_trace\\src
+	cmd /c if not exist $(OBJDIR_DEBUG)\\components md $(OBJDIR_DEBUG)\\components
 
 after_debug:
 
@@ -149,8 +150,8 @@ $(OBJDIR_DEBUG)\\ServerEntry.o: ServerEntry.cpp
 $(OBJDIR_DEBUG)\\Reference.o: Reference.cpp
 	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c Reference.cpp -o $(OBJDIR_DEBUG)\\Reference.o
 
-$(OBJDIR_DEBUG)\\vaultmp.o: vaultmp.rc vaultmp.cpp
-	$(WINDRES) $(RCFLAGS_DEBUG) $(RESINC_DEBUG) -o $(OBJDIR_DEBUG)\\vaultmprc.o vaultmp.rc
+$(OBJDIR_DEBUG)\\vaultmp.o: resources\\vaultmp.rc vaultmp.cpp
+	$(WINDRES) $(RCFLAGS_DEBUG) $(RESINC_DEBUG) -o $(OBJDIR_DEBUG)\\vaultmprc.o resources\\vaultmp.rc
 	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c vaultmp.cpp -o $(OBJDIR_DEBUG)\\vaultmp.o
 
 $(OBJDIR_DEBUG)\\VaultVector.o: VaultVector.cpp
@@ -243,18 +244,13 @@ $(OBJDIR_DEBUG)\\Base.o: Base.cpp
 $(OBJDIR_DEBUG)\\RadioButton.o: RadioButton.cpp
 	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c RadioButton.cpp -o $(OBJDIR_DEBUG)\\RadioButton.o
 
-$(OBJDIR_DEBUG)\\ListItem.o: ListItem.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c ListItem.cpp -o $(OBJDIR_DEBUG)\\ListItem.o
-
-$(OBJDIR_DEBUG)\\List.o: List.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c List.cpp -o $(OBJDIR_DEBUG)\\List.o
-
 clean_debug:
 	cmd /c del /f $(OBJ_DEBUG) $(OUT_DEBUG)
 	cmd /c rd /s/q $(OBJDIR_DEBUG)
 
 before_release:
 	cmd /c if not exist $(OBJDIR_RELEASE) md $(OBJDIR_RELEASE)
+	cmd /c if not exist $(OBJDIR_RELEASE)\\components md $(OBJDIR_RELEASE)\\components
 
 after_release:
 
@@ -275,8 +271,8 @@ $(OBJDIR_RELEASE)\\ServerEntry.o: ServerEntry.cpp
 $(OBJDIR_RELEASE)\\Reference.o: Reference.cpp
 	$(CXX) $(CFLAGS_RELEASE) $(INC_RELEASE) -c Reference.cpp -o $(OBJDIR_RELEASE)\\Reference.o
 
-$(OBJDIR_RELEASE)\\vaultmp.o: vaultmp.rc vaultmp.cpp
-	$(WINDRES) $(RCFLAGS_RELEASE) $(RESINC_RELEASE) -o $(OBJDIR_RELEASE)\\vaultmprc.o vaultmp.rc
+$(OBJDIR_RELEASE)\\vaultmp.o: resources\\vaultmp.rc vaultmp.cpp
+	$(WINDRES) $(RCFLAGS_RELEASE) $(RESINC_RELEASE) -o $(OBJDIR_RELEASE)\\vaultmprc.o resources\\vaultmp.rc
 	$(CXX) $(CFLAGS_RELEASE) $(INC_RELEASE) -c vaultmp.cpp -o $(OBJDIR_RELEASE)\\vaultmp.o
 
 $(OBJDIR_RELEASE)\\VaultVector.o: VaultVector.cpp
@@ -371,7 +367,6 @@ $(OBJDIR_RELEASE)\\ListItem.o: ListItem.cpp
 
 $(OBJDIR_RELEASE)\\List.o: List.cpp
 	$(CXX) $(CFLAGS_RELEASE) $(INC_RELEASE) -c List.cpp -o $(OBJDIR_RELEASE)\\List.o
-
 clean_release:
 	cmd /c del /f $(OBJ_RELEASE) $(OUT_RELEASE)
 	cmd /c rd /s/q $(OBJDIR_RELEASE)
