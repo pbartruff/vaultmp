@@ -4,7 +4,7 @@
 #include "Data.hpp"
 #include "VaultException.hpp"
 #include "Utils.hpp"
-#include "ufmod.h"
+#include "ufmod/ufmod.h"
 #include "iniparser/src/dictionary.h"
 #include "iniparser/src/iniparser.h"
 
@@ -319,8 +319,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int)
 		sprintf(asd, "%08X", checksum_real);
 		MessageBox(NULL,asd,asd,MB_OK);
 */
-		if (checksum_real != VAULTMP_DLL)
-			return MessageBox(NULL, "vaultmp.dll is not up to date!", "Error", MB_OK | MB_ICONERROR);
+		/*if (checksum_real != VAULTMP_DLL)
+			return MessageBox(NULL, "vaultmp.dll is not up to date!", "Error", MB_OK | MB_ICONERROR);*/
 	}
 	else
 		return MessageBox(nullptr, "Could not find vaultmp.dll!", "Error", MB_OK | MB_ICONERROR);

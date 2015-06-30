@@ -4,3 +4,4 @@ make -f iniparser_makefile
 make -f raknet_makefile
 make -f sqlite_makefile
 make -f time_makefile
+make -f ufmod_makefile

@@ -1,0 +1,2 @@
+all:
+	ar rv ufmod\\libfmod.a ufmod\\ufmod.obj

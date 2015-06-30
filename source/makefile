@@ -13,8 +13,8 @@ CFLAGSEXT =
 RESINC =
 RCFLAGS = -F pe-i386
 LIBDIR =
-LIB = -Llib\\RakNet -Llib\\iniparser -Lvaultlib
-LDFLAGS = -m32 -lvaultlib -liniparser -lRakNet ufmod.obj -lshlwapi -lcomctl32 -lwinmm -lws2_32 -lz -limagehlp -static -mwindows
+LIB = -Llib\\RakNet -Llib\\iniparser -Lvaultlib -Llib\\ufmod
+LDFLAGS = -m32 -lvaultlib -liniparser -lRakNet -lufmod -lshlwapi -lcomctl32 -lwinmm -lws2_32 -lz -limagehlp -static -mwindows
 
 INC_DEBUG = $(INC) -Ilib\\stack_trace\\include
 CFLAGS_DEBUG = $(CFLAGS) -gstabs -DVAULTMP_DEBUG -DPACKAGE -DPACKAGE_VERSION
