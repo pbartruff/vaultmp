@@ -1,7 +1,6 @@
 #ifndef ITEMLIST_H
 #define ITEMLIST_H
 
-#include "vaultmp.hpp"
 #include "RakNet.hpp"
 #include "Base.hpp"
 #include "ReferenceTypes.hpp"

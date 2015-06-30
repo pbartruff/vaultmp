@@ -1,10 +1,10 @@
 #ifndef DEBUG_H
 #define DEBUG_H
 
-#include "vaultmp.hpp"
 #include "CriticalSection.hpp"
 
 #include <fstream>
+#include <memory>
 
 template<typename T>
 struct DebugInput;

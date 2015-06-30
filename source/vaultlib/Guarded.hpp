@@ -1,7 +1,6 @@
 #ifndef GUARDED_H
 #define GUARDED_H
 
-#include "vaultmp.hpp"
 #include "Value.hpp"
 
 /**

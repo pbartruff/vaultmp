@@ -13,6 +13,9 @@
 #include <cmath>
 
 #include "vaultmp.hpp"
+#include "../vaultmp.hpp"
+#include "Pipe.hpp"
+#include "Utils.hpp"
 
 using namespace std;
 

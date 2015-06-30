@@ -1,7 +1,6 @@
 #ifndef VALUE_H
 #define VALUE_H
 
-#include "vaultmp.hpp"
 #include "Lockable.hpp"
 
 #ifdef VAULTMP_DEBUG

@@ -1,7 +1,6 @@
 #ifndef OBJECT_H
 #define OBJECT_H
 
-#include "vaultmp.hpp"
 #include "Reference.hpp"
 #include "VaultVector.hpp"
 

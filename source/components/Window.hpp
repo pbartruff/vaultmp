@@ -1,7 +1,6 @@
 #ifndef WINDOWGUI_H
 #define WINDOWGUI_H
 
-#include "vaultmp.hpp"
 #include "Base.hpp"
 #include "ReferenceTypes.hpp"
 #include "GameFactory.hpp"

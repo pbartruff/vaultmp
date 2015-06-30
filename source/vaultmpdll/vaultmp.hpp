@@ -1,7 +1,3 @@
-#include "../Pipe.hpp"
-#include "../Utils.hpp"
-#include "../vaultmp.hpp"
-
 // Fallout 3 addresses
 
 static const unsigned int LOOKUP_FORM        = 0x00455190; // Credit goes to FOSE

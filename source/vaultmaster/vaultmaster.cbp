@@ -58,12 +58,9 @@
 			<Add directory=".." />
 		</Compiler>
 		<Unit filename="../ServerEntry.cpp" />
-		<Unit filename="../Utils.cpp" />
 		<Unit filename="MasterServer.cpp" />
-		<Unit filename="MasterServer.h" />
 		<Unit filename="MasterServer.hpp" />
 		<Unit filename="vaultmaster.cpp" />
-		<Unit filename="vaultmaster.h" />
 		<Unit filename="vaultmaster.hpp" />
 		<Extensions>
 			<code_completion />

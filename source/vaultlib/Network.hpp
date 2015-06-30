@@ -1,7 +1,6 @@
 #ifndef NETWORK_H
 #define NETWORK_H
 
-#include "vaultmp.hpp"
 #include "packet/PacketFactory.hpp"
 #include "CriticalSection.hpp"
 

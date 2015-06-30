@@ -1,19 +1,18 @@
 #ifndef GAME_H
 #define GAME_H
 
-#include "vaultmp.hpp"
 #include "Guarded.hpp"
 #include "Player.hpp"
 #include "Network.hpp"
 #include "GameFactory.hpp"
 #include "Item.hpp"
-#include "Button.hpp"
-#include "Text.hpp"
-#include "Edit.hpp"
-#include "Checkbox.hpp"
-#include "RadioButton.hpp"
-#include "ListItem.hpp"
-#include "List.hpp"
+#include "components/Button.hpp"
+#include "components/Text.hpp"
+#include "components/Edit.hpp"
+#include "components/Checkbox.hpp"
+#include "components/RadioButton.hpp"
+#include "components/ListItem.hpp"
+#include "components/List.hpp"
 #include "RakNet.hpp"
 
 #ifdef VAULTMP_DEBUG

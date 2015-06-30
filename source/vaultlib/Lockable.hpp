@@ -1,7 +1,6 @@
 #ifndef LOCKABLE_H
 #define LOCKABLE_H
 
-#include "vaultmp.hpp"
 #include "CriticalSection.hpp"
 
 #ifdef VAULTMP_DEBUG

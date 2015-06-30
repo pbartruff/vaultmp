@@ -1,7 +1,6 @@
 #ifndef GAMEFACTORY_H
 #define GAMEFACTORY_H
 
-#include "vaultmp.hpp"
 #include "Base.hpp"
 #include "Expected.hpp"
 #include "Guarded.hpp"

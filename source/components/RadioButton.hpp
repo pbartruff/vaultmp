@@ -1,7 +1,6 @@
 #ifndef RADIOBUTTONGUI_H
 #define RADIOBUTTONGUI_H
 
-#include "vaultmp.hpp"
 #include "Window.hpp"
 
 /**

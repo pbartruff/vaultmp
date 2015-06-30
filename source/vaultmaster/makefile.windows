@@ -6,12 +6,12 @@ AR = ar
 LD = g++
 WINDRES = windres
 
-INC = -I.. -I..\\lib
+INC = -I.. -I..\\lib -I..\vaultlib
 CFLAGS =  -m32 -std=gnu++0x
 RESINC =
 LIBDIR =
-LIB = -L..\\lib\\RakNet
-LDFLAGS = -m32 -lRakNet -lpthread -lws2_32 -limagehlp -static
+LIB = -L..\\lib\\RakNet -L..\\vaultlib
+LDFLAGS = -m32 -lvaultlib -lRakNet -lpthread -lws2_32 -limagehlp -static
 
 INC_WINDOWS =  $(INC)
 CFLAGS_WINDOWS =  $(CFLAGS) -O2 -Wredundant-decls -Wunreachable-code
@@ -26,7 +26,6 @@ OUT_WINDOWS = vaultmaster.exe
 
 OBJ_WINDOWS = \
 $(OBJDIR_WINDOWS)\\ServerEntry.o \
-$(OBJDIR_WINDOWS)\\Utils.o \
 $(OBJDIR_WINDOWS)\\vaultmaster\\MasterServer.o \
 $(OBJDIR_WINDOWS)\\vaultmaster\\vaultmaster.o
 
@@ -47,9 +46,6 @@ out_windows: $(OBJ_WINDOWS) $(DEP_WINDOWS)
 
 $(OBJDIR_WINDOWS)\\ServerEntry.o: ..\\ServerEntry.cpp
 	$(CXX) $(CFLAGS_WINDOWS) $(INC_WINDOWS) -c ..\\ServerEntry.cpp -o $(OBJDIR_WINDOWS)\\ServerEntry.o
-
-$(OBJDIR_WINDOWS)\\Utils.o: ..\\Utils.cpp
-	$(CXX) $(CFLAGS_WINDOWS) $(INC_WINDOWS) -c ..\\Utils.cpp -o $(OBJDIR_WINDOWS)\\Utils.o
 
 $(OBJDIR_WINDOWS)\\vaultmaster\\MasterServer.o: MasterServer.cpp
 	$(CXX) $(CFLAGS_WINDOWS) $(INC_WINDOWS) -c MasterServer.cpp -o $(OBJDIR_WINDOWS)\\vaultmaster\\MasterServer.o

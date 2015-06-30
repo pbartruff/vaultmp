@@ -1,7 +1,6 @@
 #ifndef INTERFACE_H
 #define INTERFACE_H
 
-#include "vaultmp.hpp"
 #include "API.hpp"
 #include "VaultFunctor.hpp"
 #include "CriticalSection.hpp"

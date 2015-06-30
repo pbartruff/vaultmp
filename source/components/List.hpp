@@ -1,7 +1,6 @@
 #ifndef LISTGUI_H
 #define LISTGUI_H
 
-#include "vaultmp.hpp"
 #include "Window.hpp"
 
 #include <vector>

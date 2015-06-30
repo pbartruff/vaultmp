@@ -1,8 +1,6 @@
 #ifndef VAULTSERVER_H
 #define VAULTSERVER_H
 
-#include "vaultmp.hpp"
-
 #define MODFILES_PATH  "mods"
 #define SCRIPTS_PATH   "scripts"
 #define DATA_PATH      "data"

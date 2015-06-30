@@ -1,8 +1,6 @@
 #ifndef VAULTEXCEPTION_H
 #define VAULTEXCEPTION_H
 
-#include "vaultmp.hpp"
-
 #ifdef VAULTMP_DEBUG
 #include "Debug.hpp"
 #endif

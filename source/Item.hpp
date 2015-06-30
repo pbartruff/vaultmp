@@ -1,7 +1,6 @@
 #ifndef ITEM_H
 #define ITEM_H
 
-#include "vaultmp.hpp"
 #include "Object.hpp"
 
 #ifdef VAULTMP_DEBUG

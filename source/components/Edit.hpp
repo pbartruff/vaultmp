@@ -1,7 +1,6 @@
 #ifndef EDITGUI_H
 #define EDITGUI_H
 
-#include "vaultmp.hpp"
 #include "Window.hpp"
 
 #include <string>

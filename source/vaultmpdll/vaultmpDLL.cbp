@@ -21,15 +21,16 @@
 		<Compiler>
 			<Add option="-O2" />
 			<Add option="-std=gnu++0x -masm=intel" />
+			<Add option="-I..\vaultlib" />
 			<Add option="-DBUILDING_DLL=1" />
 		</Compiler>
 		<Linker>
 			<Add option="-s" />
 			<Add option="-limagehlp" />
 			<Add option="-static" />
+			<Add option="-lvaultlib" />
+			<Add option="-L..\vaultlib" />
 		</Linker>
-		<Unit filename="../Pipe.cpp" />
-		<Unit filename="../Utils.cpp" />
 		<Unit filename="vaultmp.cpp" />
 		<Unit filename="vaultmp.hpp" />
 		<Extensions>

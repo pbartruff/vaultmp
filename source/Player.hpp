@@ -1,7 +1,6 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
-#include "vaultmp.hpp"
 #include "Actor.hpp"
 
 #ifdef VAULTMP_DEBUG

@@ -1,8 +1,6 @@
 #ifndef VAULTFUNCTOR_H
 #define VAULTFUNCTOR_H
 
-#include "vaultmp.hpp"
-
 #include <string>
 #include <vector>
 

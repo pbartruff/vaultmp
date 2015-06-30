@@ -1,7 +1,6 @@
 #ifndef CHECKBOXGUI_H
 #define CHECKBOXGUI_H
 
-#include "vaultmp.hpp"
 #include "Window.hpp"
 
 /**

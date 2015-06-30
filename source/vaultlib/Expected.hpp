@@ -1,7 +1,6 @@
 #ifndef EXPECTED_H
 #define EXPECTED_H
 
-#include "vaultmp.hpp"
 #include "VaultException.hpp"
 
 /**

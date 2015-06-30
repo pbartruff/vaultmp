@@ -1,7 +1,6 @@
 #ifndef SHARED_H
 #define SHARED_H
 
-#include "vaultmp.hpp"
 #include "Value.hpp"
 #include "VaultException.hpp"
 

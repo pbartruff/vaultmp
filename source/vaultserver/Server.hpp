@@ -3,9 +3,9 @@
 
 #include "vaultserver.hpp"
 #include "Player.hpp"
-#include "Checkbox.hpp"
-#include "RadioButton.hpp"
-#include "ListItem.hpp"
+#include "../components/Checkbox.hpp"
+#include "../components/RadioButton.hpp"
+#include "../components/ListItem.hpp"
 #include "Network.hpp"
 
 /**

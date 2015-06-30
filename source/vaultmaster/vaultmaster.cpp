@@ -1,6 +1,6 @@
-#include "vaultmaster.hpp"
-#include "../Utils.hpp"
+#include "Utils.hpp"
 #include "MasterServer.hpp"
+#include "../vaultmp.hpp"
 
 void InputThread()
 {

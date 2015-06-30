@@ -1,8 +1,6 @@
 #ifndef SERVERENTRY_H
 #define SERVERENTRY_H
 
-#include "vaultmp.hpp"
-
 #include <string>
 #include <map>
 #include <vector>

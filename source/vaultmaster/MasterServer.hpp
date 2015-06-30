@@ -8,13 +8,11 @@
 #include <thread>
 #include <chrono>
 
-#include "../RakNet.hpp"
+#include "RakNet.hpp"
 
-#include "../vaultmp.hpp"
 #include "../ServerEntry.hpp"
-#include "../Data.hpp"
-#include "../Utils.hpp"
-#include "vaultmaster.hpp"
+#include "Data.hpp"
+#include "Utils.hpp"
 
 #define RAKNET_PORT        1660
 #define RAKNET_CONNECTIONS 128

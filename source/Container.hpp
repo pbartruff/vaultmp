@@ -1,7 +1,6 @@
 #ifndef CONTAINER_H
 #define CONTAINER_H
 
-#include "vaultmp.hpp"
 #include "Object.hpp"
 #include "ItemList.hpp"
 

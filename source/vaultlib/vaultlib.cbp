@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="vaultlib" />
+		<Option makefile_is_custom="1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<MakeCommands>
+			<Build command="$make -f $makefile $target" />
+			<CompileFile command="$make -f $makefile $file" />
+			<Clean command="$make -f $makefile clean_$target" />
+			<DistClean command="$make -f $makefile distclean$target" />
+			<AskRebuildNeeded command="$make -q -f $makefile $target" />
+			<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+		</MakeCommands>
+		<Build>
+			<Target title="debug">
+				<Option output="./vaultlibd" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="/debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-gstabs -DVAULTMP_DEBUG -DPACKAGE -DPACKAGE_VERSION" />
+					<Add option="-I../lib/stack_trace/include" />
+				</Compiler>
+				<MakeCommands>
+					<Build command="$make -f $makefile $target" />
+					<CompileFile command="$make -f $makefile $file" />
+					<Clean command="$make -f $makefile clean_$target" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="release">
+				<Option output="./vaultlib" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="/release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-O2 -DNDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-flto" />
+				</Linker>
+				<MakeCommands>
+					<Build command="$make -f $makefile $target" />
+					<CompileFile command="$make -f $makefile $file" />
+					<Clean command="$make -f $makefile clean_$target" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-pedantic-errors -pedantic -Wfatal-errors -Wextra -Wall -std=gnu++1y" />
+			<Add option="-I. -I../lib" />
+		</Compiler>
+		<Unit filename="CriticalSection.cpp" />
+		<Unit filename="CriticalSection.hpp" />
+		<Unit filename="Data.hpp" />
+		<Unit filename="Debug.cpp" />
+		<Unit filename="Debug.hpp" />
+		<Unit filename="Expected.hpp" />
+		<Unit filename="Guarded.hpp" />
+		<Unit filename="Lockable.cpp" />
+		<Unit filename="Lockable.hpp" />
+		<Unit filename="Network.cpp" />
+		<Unit filename="Network.hpp" />
+		<Unit filename="Pipe.cpp" />
+		<Unit filename="Pipe.hpp" />
+		<Unit filename="RakNet.hpp" />
+		<Unit filename="Shared.hpp" />
+		<Unit filename="Utils.cpp" />
+		<Unit filename="Utils.hpp" />
+		<Unit filename="Value.hpp" />
+		<Unit filename="VaultException.cpp" />
+		<Unit filename="VaultException.hpp" />
+		<Unit filename="VaultFunctor.cpp" />
+		<Unit filename="VaultFunctor.hpp" />
+		<Unit filename="VaultVector.hpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

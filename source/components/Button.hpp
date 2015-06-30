@@ -1,7 +1,6 @@
 #ifndef BUTTONGUI_H
 #define BUTTONGUI_H
 
-#include "vaultmp.hpp"
 #include "Window.hpp"
 
 /**

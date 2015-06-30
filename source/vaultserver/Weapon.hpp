@@ -3,7 +3,6 @@
 
 #include <unordered_map>
 
-#include "vaultmp.hpp"
 #include "vaultserver.hpp"
 #include "Database.hpp"
 #include "Expected.hpp"

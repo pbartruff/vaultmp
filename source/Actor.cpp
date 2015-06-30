@@ -5,7 +5,7 @@
 #else
 #include "vaultserver/Record.hpp"
 #include "vaultserver/Weapon.hpp"
-#include "Item.hpp"
+#include "components/Item.hpp"
 #endif
 
 #include <algorithm>

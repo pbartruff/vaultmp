@@ -1,7 +1,6 @@
 #ifndef REFERENCE_H
 #define REFERENCE_H
 
-#include "vaultmp.hpp"
 #include "Value.hpp"
 #include "RakNet.hpp"
 #include "Base.hpp"

@@ -1,8 +1,6 @@
 #ifndef VAULTVECTOR_H
 #define VAULTVECTOR_H
 
-#include "vaultmp.hpp"
-
 #include <utility>
 #define _USE_MATH_DEFINES
 #include <cmath>

@@ -1,7 +1,6 @@
 #ifndef BASE_H
 #define BASE_H
 
-#include "vaultmp.hpp"
 #include "CriticalSection.hpp"
 #include "RakNet.hpp"
 #include "packet/PacketFactory.hpp"

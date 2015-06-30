@@ -1,7 +1,6 @@
 #ifndef ACTOR_H
 #define ACTOR_H
 
-#include "vaultmp.hpp"
 #include "Container.hpp"
 
 #ifdef VAULTMP_DEBUG

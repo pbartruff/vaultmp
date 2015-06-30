@@ -1,7 +1,6 @@
 #ifndef LISTITEMGUI_H
 #define LISTITEMGUI_H
 
-#include "vaultmp.hpp"
 #include "Base.hpp"
 #include "GameFactory.hpp"
 #include "ReferenceTypes.hpp"

@@ -1,7 +1,6 @@
 #ifndef BETHESDA_H
 #define BETHESDA_H
 
-#include "vaultmp.hpp"
 #include "RakNet.hpp"
 
 #ifdef VAULTMP_DEBUG

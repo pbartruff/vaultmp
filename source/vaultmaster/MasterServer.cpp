@@ -1,4 +1,5 @@
 #include "MasterServer.hpp"
+#include "../vaultmp.hpp"
 
 using namespace RakNet;
 using namespace std;
