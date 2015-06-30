@@ -3,10 +3,10 @@
 
 #include "vaultserver.hpp"
 #include "RakNet.hpp"
-#include "../components/ItemList.hpp"
+#include "ItemList.hpp"
 #include "ScriptFunction.hpp"
 #include "GameFactory.hpp"
-#include "../components/Item.hpp"
+#include "../Item.hpp"
 #include "Player.hpp"
 #include "../components/Button.hpp"
 #include "../components/Text.hpp"

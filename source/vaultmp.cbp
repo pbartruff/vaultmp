@@ -118,10 +118,6 @@
 		<Unit filename="components/Checkbox.hpp" />
 		<Unit filename="components/Edit.cpp" />
 		<Unit filename="components/Edit.hpp" />
-		<Unit filename="components/Item.cpp" />
-		<Unit filename="components/Item.hpp" />
-		<Unit filename="components/ItemList.cpp" />
-		<Unit filename="components/ItemList.hpp" />
 		<Unit filename="components/List.cpp" />
 		<Unit filename="components/List.hpp" />
 		<Unit filename="components/ListItem.cpp" />
