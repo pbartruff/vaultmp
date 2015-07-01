@@ -85,7 +85,7 @@ void InputThread()
 
 void SignalHandler(int)
 {
-	printf("SIGTERM/SIGINT received. Shutting down...press enter to continue\n");
+	printf("SIGTERM/SIGINT received. Shutting down... Press enter to continue.\n");
 	cmd_exit = true;
 	Dedicated::TerminateThread();
 }
