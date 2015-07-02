@@ -24,7 +24,6 @@ namespace Utils
 		bool DoubleCompare(double a, double b, double epsilon);
 		std::string str_replace(const std::string& source, const char* find, const char* replace);
 		std::string& RemoveExtension(std::string& file);
-		const char* FileOnly(const char* path);
 		unsigned int FileLength(const char* file);
 		unsigned int crc32buf(char* buf, size_t len);
 		unsigned int updateCRC32(unsigned char ch, unsigned int crc);

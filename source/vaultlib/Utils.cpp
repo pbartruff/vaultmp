@@ -80,16 +80,6 @@ string& Utils::RemoveExtension(string& file)
 	return file;
 }
 
-const char* Utils::FileOnly(const char* path)
-{
-	const char* tmp = path;
-	const char* end = path;
-
-	for (; (tmp = strpbrk(tmp, "\\/")) != nullptr; end = ++tmp);
-
-	return end;
-}
-
 unsigned int Utils::FileLength(const char* file)
 {
 	FILE* _file = fopen(file, "rb");
