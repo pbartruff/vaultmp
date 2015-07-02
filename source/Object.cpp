@@ -235,7 +235,7 @@ vector<string> ObjectFunctor::operator()()
 
 	if (id)
 		GameFactory::Operate<Object, RETURN_VALIDATED>(id, [this, &result](Object* object) {
-			result.emplace_back(Utils::toString(object->GetReference()));
+			result.emplace_back(to_string(object->GetReference()));
 		});
 	else
 	{
@@ -244,7 +244,7 @@ vector<string> ObjectFunctor::operator()()
 		for (unsigned int refID : references)
 			GameFactory::Operate<Object, RETURN_FACTORY_VALIDATED>(refID, [this, refID, &result](FactoryObject& object) {
 				if (!filter(object))
-					result.emplace_back(Utils::toString(refID));
+					result.emplace_back(to_string(refID));
 			});
 	}
 

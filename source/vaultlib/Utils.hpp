@@ -22,11 +22,6 @@ namespace Utils
 		void timestamp();
 		int progress_func(double TotalToDownload, double NowDownloaded);
 		bool DoubleCompare(double a, double b, double epsilon);
-		std::string toString(signed int value);
-		std::string toString(unsigned int value);
-		std::string toString(unsigned char value);
-		std::string toString(double value);
-		std::string toString(unsigned long long value);
 		std::string str_replace(const std::string& source, const char* find, const char* replace);
 		std::string& RemoveExtension(std::string& file);
 		const char* FileOnly(const char* path);

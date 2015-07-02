@@ -71,7 +71,7 @@ vector<string> ContainerFunctor::operator()()
 		for (unsigned int refID : references)
 			GameFactory::Operate<Container, RETURN_FACTORY_VALIDATED>(refID, [this, refID, &result](FactoryContainer& container) {
 				if (!filter(container))
-					result.emplace_back(Utils::toString(refID));
+					result.emplace_back(to_string(refID));
 			});
 	}
 

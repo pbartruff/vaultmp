@@ -53,41 +53,6 @@ bool Utils::DoubleCompare(double a, double b, double epsilon)
 	return fabs(a - b) < epsilon;
 }
 
-string Utils::toString(signed int value)
-{
-	char str[16];
-	snprintf(str, sizeof(str), "%d", value);
-	return string(str);
-}
-
-string Utils::toString(unsigned int value)
-{
-	char str[16];
-	snprintf(str, sizeof(str), "%d", value);
-	return string(str);
-}
-
-string Utils::toString(unsigned char value)
-{
-	char str[4];
-	snprintf(str, sizeof(str), "%d", value);
-	return string(str);
-}
-
-string Utils::toString(double value)
-{
-	char str[16];
-	snprintf(str, sizeof(str), "%f", value);
-	return string(str);
-}
-
-string Utils::toString(unsigned long long value)
-{
-	char str[32];
-	snprintf(str, sizeof(str), "%llu", value);
-	return string(str);
-}
-
 string Utils::str_replace(const string& source, const char* find, const char* replace)
 {
 	unsigned int find_len = strlen(find);

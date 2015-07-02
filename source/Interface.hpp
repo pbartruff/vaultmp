@@ -4,7 +4,6 @@
 #include "API.hpp"
 #include "VaultFunctor.hpp"
 #include "CriticalSection.hpp"
-#include "Utils.hpp"
 
 #ifdef VAULTMP_DEBUG
 #include "Debug.hpp"
@@ -53,7 +52,7 @@ class Interface : public API
 					std::vector<std::string> convert;
 
 					for (unsigned char param : str)
-						convert.emplace_back(Utils::toString(param));
+						convert.emplace_back(std::to_string(param));
 
 					return convert;
 				}
@@ -63,15 +62,15 @@ class Interface : public API
 					std::vector<std::string> convert;
 
 					for (unsigned int param : str)
-						convert.emplace_back(Utils::toString(param));
+						convert.emplace_back(std::to_string(param));
 
 					return convert;
 				}
 
-				static std::vector<std::string> make(signed int str) { return std::vector<std::string>{Utils::toString(str)}; }
-				static std::vector<std::string> make(unsigned int str) { return std::vector<std::string>{Utils::toString(str)}; }
-				static std::vector<std::string> make(unsigned long long str) { return std::vector<std::string>{Utils::toString(str)}; }
-				static std::vector<std::string> make(double str) { return std::vector<std::string>{Utils::toString(str)}; }
+				static std::vector<std::string> make(signed int str) { return std::vector<std::string>{std::to_string(str)}; }
+				static std::vector<std::string> make(unsigned int str) { return std::vector<std::string>{std::to_string(str)}; }
+				static std::vector<std::string> make(unsigned long long str) { return std::vector<std::string>{std::to_string(str)}; }
+				static std::vector<std::string> make(double str) { return std::vector<std::string>{std::to_string(str)}; }
 				static std::vector<std::string> make(bool str) { return std::vector<std::string>{str ? "1" : "0"}; }
 
 			public:

@@ -955,7 +955,7 @@ void Game::NewWindow(const FactoryWindow& reference)
 	Interface::Dynamic([&reference]() {
 		if (reference->GetLabel().empty())
 		{
-			reference->SetLabel(Utils::toString(reference->GetNetworkID()));
+			reference->SetLabel(to_string(reference->GetNetworkID()));
 
 			Interface::ExecuteCommand(Func::GUICreateWindow, {RawParameter(reference->GetLabel())});
 		}
@@ -976,7 +976,7 @@ void Game::NewButton(const FactoryButton& reference)
 	Interface::Dynamic([&reference]() {
 		if (reference->GetLabel().empty())
 		{
-			reference->SetLabel(Utils::toString(reference->GetNetworkID()));
+			reference->SetLabel(to_string(reference->GetNetworkID()));
 
 			Interface::ExecuteCommand(Func::GUICreateButton, {RawParameter(reference->GetParentWindow()), RawParameter(reference->GetLabel())});
 		}
@@ -993,7 +993,7 @@ void Game::NewText(const FactoryText& reference)
 	Interface::Dynamic([&reference]() {
 		if (reference->GetLabel().empty())
 		{
-			reference->SetLabel(Utils::toString(reference->GetNetworkID()));
+			reference->SetLabel(to_string(reference->GetNetworkID()));
 
 			Interface::ExecuteCommand(Func::GUICreateText, {RawParameter(reference->GetParentWindow()), RawParameter(reference->GetLabel())});
 		}
@@ -1010,7 +1010,7 @@ void Game::NewEdit(const FactoryEdit& reference)
 	Interface::Dynamic([&reference]() {
 		if (reference->GetLabel().empty())
 		{
-			reference->SetLabel(Utils::toString(reference->GetNetworkID()));
+			reference->SetLabel(to_string(reference->GetNetworkID()));
 
 			Interface::ExecuteCommand(Func::GUICreateEdit, {RawParameter(reference->GetParentWindow()), RawParameter(reference->GetLabel())});
 		}
@@ -1030,7 +1030,7 @@ void Game::NewCheckbox(const FactoryCheckbox& reference)
 	Interface::Dynamic([&reference]() {
 		if (reference->GetLabel().empty())
 		{
-			reference->SetLabel(Utils::toString(reference->GetNetworkID()));
+			reference->SetLabel(to_string(reference->GetNetworkID()));
 
 			Interface::ExecuteCommand(Func::GUICreateCheckbox, {RawParameter(reference->GetParentWindow()), RawParameter(reference->GetLabel())});
 		}
@@ -1049,7 +1049,7 @@ void Game::NewRadioButton(const FactoryRadioButton& reference)
 	Interface::Dynamic([&reference]() {
 		if (reference->GetLabel().empty())
 		{
-			reference->SetLabel(Utils::toString(reference->GetNetworkID()));
+			reference->SetLabel(to_string(reference->GetNetworkID()));
 
 			Interface::ExecuteCommand(Func::GUICreateRadio, {RawParameter(reference->GetParentWindow()), RawParameter(reference->GetLabel()), RawParameter(reference->GetGroup())});
 		}
@@ -1086,7 +1086,7 @@ void Game::NewList(const FactoryList& reference)
 	Interface::Dynamic([&reference]() {
 		if (reference->GetLabel().empty())
 		{
-			reference->SetLabel(Utils::toString(reference->GetNetworkID()));
+			reference->SetLabel(to_string(reference->GetNetworkID()));
 
 			Interface::ExecuteCommand(Func::GUICreateListbox, {RawParameter(reference->GetParentWindow()), RawParameter(reference->GetLabel())});
 		}

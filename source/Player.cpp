@@ -284,7 +284,7 @@ vector<string> PlayerFunctor::operator()()
 
 				unsigned int movcontrols = (right | (left << 8) | (backward << 16) | (forward << 24));
 
-				result.emplace_back(Utils::toString(movcontrols));
+				result.emplace_back(to_string(movcontrols));
 			}
 		});
 	else
@@ -294,7 +294,7 @@ vector<string> PlayerFunctor::operator()()
 		for (unsigned int refID : references)
 			GameFactory::Operate<Player, RETURN_FACTORY_VALIDATED>(refID, [this, refID, &result](FactoryPlayer& player) {
 				if (!filter(player))
-					result.emplace_back(Utils::toString(refID));
+					result.emplace_back(to_string(refID));
 			});
 	}
 

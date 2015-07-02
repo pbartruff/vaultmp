@@ -364,7 +364,7 @@ vector<string> ActorFunctor::operator()()
 		for (unsigned int refID : references)
 			GameFactory::Operate<Actor, RETURN_FACTORY_VALIDATED>(refID, [this, refID, &result](FactoryActor& actor) {
 				if (!filter(actor))
-					result.emplace_back(Utils::toString(refID));
+					result.emplace_back(to_string(refID));
 			});
 	}
 
