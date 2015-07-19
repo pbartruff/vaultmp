@@ -73,7 +73,6 @@
 			<Add directory="stack_trace/include" />
 		</Compiler>
 		<Linker>
-			<Add option="ufmod.obj" />
 			<Add option="-lshlwapi" />
 			<Add option="-lcomctl32" />
 			<Add option="-lwinmm" />
@@ -131,7 +130,6 @@
 		<Unit filename="resources/vaultmp.rc">
 			<Option compilerVar="WINDRES" />
 		</Unit>
-		<Unit filename="ufmod.h" />
 		<Unit filename="vaultmp.cpp" />
 		<Unit filename="vaultmp.hpp" />
 		<Extensions>
