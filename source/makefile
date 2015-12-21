@@ -6,13 +6,13 @@ AR = ar.exe
 LD = g++.exe
 WINDRES = windres.exe
 
-INC = -I. -Ilib
+INC = -I. -Ilib -IC:\\mingw-w64\\i686-5.2.0-posix-dwarf-rt_v4-rev1\\mingw32\\include -Ilib\\RakNet\\Source
 CFLAGS = -pedantic-errors -pedantic -Wfatal-errors -Wextra -Wall -std=gnu++1y
 CFLAGSEXT =
 RESINC =
 RCFLAGS = -F pe-i386
 LIBDIR =
-LIB = -Llib\\RakNet -Llib\\iniparser
+LIB = -Llib\\RakNet -Llib\\iniparser 
 LDFLAGS = -m32 -liniparser -lRakNet ufmod.obj -lshlwapi -lcomctl32 -lwinmm -lws2_32 -lz -limagehlp -static -mwindows
 
 INC_DEBUG = $(INC) -Ilib\\stack_trace\\include

@@ -18,6 +18,11 @@
     #include <imagehlp.h>
 
     #if defined(__MINGW32__)
+	
+		// http://stackoverflow.com/questions/11748035/binutils-bfd-h-wants-config-h-now
+		#define PACKAGE "vault-mp"
+		#define PACKAGE_VERSION "0.0.1"
+
         #include <bfd.h> // link against libbfd and libiberty
         #include <psapi.h> // link against psapi
         #include <cxxabi.h>
