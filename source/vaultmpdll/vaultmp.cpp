@@ -3,7 +3,6 @@
  * Note: completely scrap and re-engineer
  * More note: be careful. here be pointers to pointers to pointers and dragons
  */
-
 #include <winsock2.h>
 #include <cstdio>
 #include <vector>

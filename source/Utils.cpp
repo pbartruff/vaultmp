@@ -4,6 +4,7 @@
 #include <imagehlp.h>
 #endif
 
+#include <stdio.h>
 #include <cstring>
 #include <ctime>
 #include <cmath>
