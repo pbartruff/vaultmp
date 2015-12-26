@@ -6,7 +6,8 @@ AR = ar.exe
 LD = g++.exe
 WINDRES = windres.exe
 
-INC = -I. -Ilib -IC:\\mingw-w64\\i686-5.2.0-posix-dwarf-rt_v4-rev1\\mingw32\\include -Ilib\\RakNet\\Source
+INC_MINGW = -IC:\\mingw-w64\\i686-5.2.0-posix-dwarf-rt_v4-rev1\\mingw32\\include
+INC = -I. -Ilib  $(INC_MINGW) -Ilib\\RakNet\\Source
 CFLAGS = -pedantic-errors -pedantic -Wfatal-errors -Wextra -Wall -std=gnu++1y
 CFLAGSEXT =
 RESINC =

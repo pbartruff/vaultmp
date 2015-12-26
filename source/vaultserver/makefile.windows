@@ -6,7 +6,9 @@ AR = ar.exe
 LD = g++.exe
 WINDRES = windres.exe
 
-INC = -I.. -I..\\lib
+INC_MINGW = -IC:\\mingw-w64\\i686-5.2.0-posix-dwarf-rt_v4-rev1\\mingw32\\include
+INC_BOOST = -I..\\lib\\boost\\libs\\any\\include -I..\\lib\\boost\\libs\\config\\include -I..\\lib\\boost\\libs\\type_index\\include -I..\\lib\\boost\\libs\\static_assert\\include -I..\\lib\\boost\\libs\\throw_exception\\include -I..\\lib\\boost\\libs\\current_function\\include -I..\\lib\\boost\\libs\\assert\\include -I..\\lib\\boost\\libs\\core\\include -I..\\lib\\boost\\libs\\current_function\\include -I..\\lib\\boost\\libs\\type_traits\\include -I..\\lib\\boost\\libs\\mpl\\include -I..\\lib\\boost\\libs\\preprocessor\\include
+INC = -I.. -I..\\lib $(INC_MINGW) $(INC_BOOST)
 CFLAGS = -pedantic-errors -pedantic -Wfatal-errors -Wextra -Wall -std=gnu++1y -m32 -DVAULTSERVER
 CFLAGSEXT =
 RESINC =
