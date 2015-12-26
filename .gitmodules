@@ -10,3 +10,6 @@
 [submodule "source/lib/RakNet"]
 	path = source/lib/RakNet
 	url = https://github.com/OculusVR/RakNet.git
+[submodule "source/lib/boost"]
+	path = source/lib/boost
+	url = https://github.com/boostorg/boost.git
