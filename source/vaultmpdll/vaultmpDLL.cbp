@@ -9,12 +9,13 @@
 			<Target title="default">
 				<Option output="vaultmp" prefix_auto="1" extension_auto="1" />
 				<Option type="3" />
-				<Option compiler="copy_of_gnu_gcc_compiler_mingw-64_x86" />
+				<Option compiler="gcc" />
 				<Option createDefFile="1" />
 				<Option createStaticLib="1" />
 				<Compiler>
 					<Add option="-Wredundant-decls" />
 					<Add option="-Wunreachable-code" />
+					<Add option="-DWINVER=0x0500" />
 				</Compiler>
 			</Target>
 		</Build>
@@ -29,7 +30,9 @@
 			<Add option="-static" />
 		</Linker>
 		<Unit filename="../Pipe.cpp" />
+		<Unit filename="../Pipe.hpp" />
 		<Unit filename="../Utils.cpp" />
+		<Unit filename="../Utils.hpp" />
 		<Unit filename="vaultmp.cpp" />
 		<Unit filename="vaultmp.hpp" />
 		<Extensions>
